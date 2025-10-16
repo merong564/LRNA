@@ -52,8 +52,10 @@
     2) DB에서 해당 기록을 불러옴
     
     3) GPT가 전략, 근거를 자연어로 답변
-    
-    ![image.png](https://github.com/user-attachments/assets/f2ec264a-9746-45b4-bb59-7350e8e6c132)
+  
+   <p align="center">
+    <img src="https://github.com/user-attachments/assets/f2ec264a-9746-45b4-bb59-7350e8e6c132" width="500" height="400"/>
+    </p>
     
 
 ## 🧩 사용 기술
@@ -65,6 +67,8 @@
 - GUI: PyQt5
 - DB: SQLite3
 - 환경설정: dotenv (.env 환경변수)
+
+<br />
 
 ## 🔁 전체 흐름
 
@@ -86,9 +90,14 @@
     - 사용자가 질문
     - DB에 저장된 근거를 불러와 ChatGPT가 답변
 
-## 🔧 시스템 구성도 (Architecture)
+<br />
 
-![image.png](https://github.com/user-attachments/assets/20871cce-4ac1-4818-a4d1-bf40fe84c102)
+## 🔧 시스템 구성도 (Architecture)
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/20871cce-4ac1-4818-a4d1-bf40fe84c102" width="200" height="600"/>
+</p>
+
+<br />
 
 ## 📁 디렉토리 구조
 
@@ -119,6 +128,7 @@ LRNA/
 ├── .env                          	# 환경 변수 
 └── requirements.txt              	# 패키지 목록
 ```
+<br />
 
 ## 📷 예시 시나리오
 
@@ -129,16 +139,16 @@ LRNA/
 - 공사 표지판과 차선 축소 구간을 인식
 
 - ChatGPT의 주행 전략 생성
-<br />
-    “안전을 위해 좌측 차선으로 변경하세요.”
+
+      “안전을 위해 좌측 차선으로 변경하세요.”
 
 - 운전자가 주행 전략에 대해 질문
-<br />
-    “왜 차선을 변경하나요?”
+
+      “왜 차선을 변경하나요?”
 
 - ChatGPT의 답변 출력
-<br />
-    “전방에 공사 진행 중으로, 우측 차선이 폐쇄되었기 때문에 좌측 차선으로 안내했습니다.”
+
+      “전방에 공사 진행 중으로, 우측 차선이 폐쇄되었기 때문에 좌측 차선으로 안내했습니다.”
 
 <br />
 
@@ -149,6 +159,8 @@ LRNA/
 - 포트홀 회피
 
 - 보행자/동물 돌발 출현 시 정지
+
+<br />
 
 ## 🚀 확장 아이디어
 
@@ -164,18 +176,19 @@ LRNA/
     - 실제 네비게이션처럼 음성 안내 제공
     - ChatGPT가 생성한 주행 전략을 TTS(Text-to-Speech) 엔진으로 변환
 
-## 자료
+## Reference
 
 1. **데이터셋**
     - 수도권 지역 도로상의 장애물 및 도로 표면의 이상 상태 인지를 위한 영상 및 이미지 데이터
-        
+
         [도로장애물/표면 인지 영상(수도권)](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=179)
         
         [고해상도 도로노면 이미지 데이터](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71781)
-        
-        ![image.png](https://github.com/user-attachments/assets/1c2affd8-fc62-49c0-a656-23ce5700be4f)
+
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/1c2affd8-fc62-49c0-a656-23ce5700be4f" width="400" height="300"/>
+      </p>
         
 
 2. **Yolov12 pretrained model**
-<br />
     - [github link](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/models/12/yolo12.yaml)
