@@ -50,14 +50,10 @@ class MainWindow(QMainWindow):
         # 전체 수직 레이아웃 구성
         layout = QVBoxLayout()
 
-        # 첫 번째 줄: 이미지 라벨과 버튼이 나란히 들어간 수평 레이아웃
-        layout.addLayout(top_layout)
-        # 두 번째 줄: 사용자 입력창 (GPT에게 보낼 프롬프트)
-        layout.addWidget(self.text_input)
-        # 세 번째 줄: GPT 설명 생성 버튼
-        layout.addWidget(self.generate_button)
-        # 네 번째 줄: GPT의 결과 텍스트 출력창
-        layout.addWidget(self.result_output)
+        layout.addLayout(top_layout)                    # 이미지 라벨과 버튼이 나란히 들어간 수평 레이아웃
+        layout.addWidget(self.text_input)               # 사용자 입력창 (GPT에게 보낼 프롬프트)
+        layout.addWidget(self.generate_button)          # GPT 설명 생성 버튼
+        layout.addWidget(self.result_output)            # GPT의 결과 텍스트 출력창
 
         # 레이아웃을 QWidget에 붙이고, 해당 위젯을 윈도우의 중앙 위젯으로 설정
         container = QWidget()
