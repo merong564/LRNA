@@ -6,8 +6,8 @@ SQLite DB 핸들러 모듈
 import sqlite3
 import json
 import os
+from utils.config import DB_PATH
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "..", "db", "driving_log.db")
 
 def init_db():
     """DB 테이블 생성"""

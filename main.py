@@ -1,3 +1,5 @@
+import torch
+from ultralytics import YOLO
 import sys
 from PyQt5.QtWidgets import QApplication
 from gui.main_app import MainWindow
