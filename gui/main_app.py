@@ -60,22 +60,6 @@ class MainWindow(QMainWindow):
         container.setLayout(layout)
         self.setCentralWidget(container)
 
-    def init_db(self):
-        conn = sqlite3.connect(DB_PATH)
-        cursor = conn.cursor()          # 커서 생성
-        # 커리 생성
-        cursor.execute('''               
-            CREATE TABLE IF NOT EXISTS image_logs (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                image BLOB,
-                prompt TEXT,
-                response TEXT,
-                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
-            )
-        ''')
-        conn.commit()
-        conn.close()
-
     # 이미지 불러오기 + 이미지 고정
     def load_image(self):
         try:
